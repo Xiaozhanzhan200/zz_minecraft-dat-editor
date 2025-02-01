@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="png">
+    <file>image/grass_block.png</file>
+  </qresource>
+  <qresource prefix="ico">
+    <file>image/new.ico</file>
+    <file>image/open.ico</file>
+    <file>image/save.ico</file>
+  </qresource>
+</RCC>

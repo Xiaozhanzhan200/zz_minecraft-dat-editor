@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::WheelFocus</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>世界编辑器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/png/image/grass_block.png</normaloff>:/png/image/grass_block.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>351</width>
+      <height>309</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>常规</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>322</width>
+         <height>279</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>321</width>
+          <height>753</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_32">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;保存此存档基础数据存储文件的游戏的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%95%B0%E6%8D%AE%E7%89%88%E6%9C%AC&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;数据版本&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果此项不存在则游戏认为此项是-1。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="placeholderText">
+            <string>不建议修改</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_16">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档世界出生点的X坐标。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_17">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档世界出生点的Y坐标。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_18">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档世界出生点的Z坐标。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>   Y   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>   X   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>   Z   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_41">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档世界出生点出生时所看向的水平角度，以顺时针角度计，为0时代表Z轴正方向（正南方）。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>水平角度</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="15" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存储此存档时游戏的详细版本信息。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>游戏版本：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="text">
+            <string>启用的数据包</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>难度：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>世界名：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QTextEdit" name="textEdit">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档禁用的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%95%B0%E6%8D%AE%E5%8C%85&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;数据包&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。此值不存在时游戏默认为仅启用&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;vanilla&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;数据包。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>游戏时间：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="lineEdit_29">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档内世界晴天剩余时间，在此期间天气将保持晴天，但此值大于0不是晴天的必要条件。当此值不存在时游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档的游戏&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%9A%BE%E5%BA%A6&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;难度&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。0-3分别为和平、简单、普通和困难。当此项不存在时游戏默认为2，即普通。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>和平</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>简单</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>普通</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>困难</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档中游戏按照游戏昼夜循环而非游戏刻计算的游戏时间，可以被&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;/&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E5%91%BD%E4%BB%A4/time&quot;&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#0645ad; background-color:#f8f9fa;&quot;&gt;time&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;修改。当此值不存在时游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QLineEdit" name="lineEdit_31">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;游戏尝试生成流浪商人的成功概率。游戏加载时除以1000计算真实概率。如50表示5%的生成概率。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="text">
+            <string>存档区块版本</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档的名称。当此项不存在时游戏默认为空字符串。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>最后保存时间：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="label_46">
+           <property name="text">
+            <string>出生点坐标</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="comboBox">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档的默认&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;游戏模式&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，控制玩家进入世界或重生时的游戏模式。如果此项不存在则游戏默认为生存模式。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>生存</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>创造</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>冒险</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>旁观</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="lineEdit_34">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档的游戏时间。此时间从存档被创建开始计时，单位为&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%B8%B8%E6%88%8F%E5%88%BB&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;游戏刻&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QLineEdit" name="lineEdit_30">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;如果存档内世界目前不处于雷暴天气，此值代表距离下一次雷暴的时间。如果目前正处于雷暴天气，此值表示距离雷暴结束的时间。此值按游戏刻计算。如果此项不存在游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="lineEdit_26">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;上次保存此存档的&lt;/span&gt;&lt;a href=&quot;http://baike.baidu.com/item/UNIX%E6%97%B6%E9%97%B4&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#3366bb; background-color:#ffffff;&quot;&gt;时间戳&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。当此项不存在时默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>流浪商人生成概率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>晴天剩余时间：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>存档的游戏时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QComboBox" name="comboBox_4">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档区块文件的版本，对于Anvil文件格式（当前）为19133，对于MCRegion格式为19132，如果不为这两个值游戏获取存档信息时报错&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>19113</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>19112</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>种子：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>雷暴时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>禁用的数据包：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="whatsThis">
+            <string>如果存档内世界目前不处于降雨天气，此值代表距离下一次降雨的时间。如果目前正处于降雨天气，此值表示距离降雨结束的时间。此值按游戏刻计算。如果此项不存在游戏默认为0。</string>
+           </property>
+           <property name="text">
+            <string>下雨时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QTextEdit" name="textEdit_2">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档启用的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%95%B0%E6%8D%AE%E5%8C%85&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;数据包&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。此值不存在时游戏默认为仅启用&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;vanilla&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;数据包。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>数据版本</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>游戏模式：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E4%B8%96%E7%95%8C%E7%A7%8D%E5%AD%90&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;世界种子&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QLineEdit" name="lineEdit_33">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;如果存档内世界目前不处于降雨天气，此值代表距离下一次降雨的时间。如果目前正处于降雨天气，此值表示距离降雨结束的时间。此值按游戏刻计算。如果此项不存在游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="inputMask">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_19">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;游戏的版本名称。如果此项不存在则使用当前正在加载此存档的游戏的版本名称。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;表示此版本是否为快照版。如果此项不存在则使用当前正在加载此存档的游戏的类型。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>为快照版本</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+               <property name="autoRepeat">
+                <bool>false</bool>
+               </property>
+               <property name="tristate">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_20">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;开发系列，用于标识开发分支。常规正式版和快照为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果此项不存在则使用当前正在加载此存档的游戏的开发系列。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="placeholderText">
+                <string>不建议修改</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>开发系列：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>ID:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_21">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;游戏的数据版本。如果此项不存在则使用当前正在加载此存档的游戏的数据版本。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="placeholderText">
+                <string>不建议修改</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>边界</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;边界宽度的过渡时间。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>过度到：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家接近边界渲染出现红色警告框的最大距离。如果此项不存在则游戏默认为5。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_27">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;超出边界后，玩家仍然不会受到伤害的安全区的宽度。如果此项不存在则游戏默认为5。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>中心Z坐标：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>边界伤害：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;世界边界中心的X坐标。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;边界宽度。如果此项不存在则游戏默认为59999968。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>边界大小：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>变化时间：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_8">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;超出边界安全区后，玩家每远离安全区一格增加的伤害值。如果此项不存在则游戏默认0.2。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>警告距离：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>中心X坐标：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>安全区域</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEdit_28">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;边界宽度过渡到的目标宽度。如果此项不存在则游戏默认为59999968。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;世界边界中心的Z坐标。如果此项不存在则游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>警告时间</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit_35">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当玩家接近边界距离小于边界过渡速度乘以此值时渲染出现红色警告框。如果此项不存在则游戏默认为15。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>玩家-常规</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>322</width>
+         <height>279</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>321</width>
+          <height>1072</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="10" column="1">
+          <widget class="QLineEdit" name="lineEdit_68"/>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLabel" name="label_83">
+           <property name="text">
+            <string>经验值总数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_53">
+           <property name="text">
+            <string>步行速度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QCheckBox" name="checkBox_20">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否曾通过&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;返回传送门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;前往&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E4%B8%BB%E4%B8%96%E7%95%8C&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;主世界&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，即是否看过鸣谢界面。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>否看过鸣谢界面</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;爆炸击退减少摔&lt;/p&gt;&lt;p&gt;落伤害的最长时间&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QCheckBox" name="checkBox_14">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否正在&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%A3%9E%E8%A1%8C&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;飞行&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>正在飞行</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="label_73">
+           <property name="text">
+            <string>睡觉时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="lineEdit_59">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的饱和度。如果&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;饥饿值&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;不存在游戏默认为5。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QLineEdit" name="lineEdit_15">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家在死亡画面中显示的分数。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_72">
+           <property name="text">
+            <string>选中的快捷栏编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="0">
+          <widget class="QLabel" name="label_85">
+           <property name="text">
+            <string>玩家触发袭击的位置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_49">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;步行速度。如果&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;飞行速度&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;不存在则游戏认为此项是0.1。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_62">
+           <property name="text">
+            <string>食物计刻器</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>消耗度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_57">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%B6%88%E8%80%97%E5%BA%A6&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;消耗度&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;饥饿值&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;不存在游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="1">
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string>   Z   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_71">
+             <property name="text">
+              <string>   X   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_66"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_67"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_65"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_69">
+             <property name="text">
+              <string>   Y   </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="16" column="1">
+          <widget class="QCheckBox" name="checkBox_16">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否可以摧毁、放置和调整方块和&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E7%9B%94%E7%94%B2%E6%9E%B6&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;盔甲架&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果此项不存在则游戏认为此项是&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>与方块交互</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QLineEdit" name="lineEdit_13"/>
+         </item>
+         <item row="23" column="0">
+          <widget class="QLabel" name="label_86">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;玩家进入下界前&lt;/p&gt;&lt;p&gt;在主世界的位置&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QComboBox" name="comboBox_5">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的上一个游戏模式，用于&lt;/span&gt;&lt;span style=&quot; font-family:'inherit'; font-weight:600; color:#222222; background-color:#f8f9fa;&quot;&gt;F3&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt; + &lt;/span&gt;&lt;span style=&quot; font-family:'inherit'; font-weight:600; color:#222222; background-color:#f8f9fa;&quot;&gt;N&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;在上一个模式和旁观模式中切换。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>生存模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>创造模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>冒险模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>旁观模式</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QCheckBox" name="checkBox_21">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家落地时是否产生大范围的额外粒子。当使用重锤猛击击中在地面上的实体时被设置为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，落地时设置为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>产生额外粒子</string>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="1">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_58">
+             <property name="text">
+              <string>   Y   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_59">
+             <property name="text">
+              <string>   Z   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_57">
+             <property name="text">
+              <string>   X   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_54"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_55"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_56"/>
+           </item>
+          </layout>
+         </item>
+         <item row="19" column="1">
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_56">
+             <property name="text">
+              <string>击退Z坐标</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_55">
+             <property name="text">
+              <string>击退Y坐标</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_54">
+             <property name="text">
+              <string>击退X坐标</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_50">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;击退时的X坐标。玩家使用&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%87%8D%E9%94%A4&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;重锤&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;猛击时，如果Y坐标高于玩家当前位置，则会被设置为玩家当前的X坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_51">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;击退时的Y坐标。玩家使用重锤猛击时，如果此值高于玩家当前位置，则会被设置为玩家当前的Y坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_52">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;击退时的Z坐标。玩家使用重锤猛击时，如果Y坐标高于玩家当前位置，则会被设置为玩家当前的Z坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="19" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>击退坐标</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_53">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;爆炸击退减少摔落伤害的最长时间，按游戏刻计。玩家被&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%A3%8E%E5%BC%B9%EF%BC%88%E5%AE%9E%E4%BD%93%EF%BC%89&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#0645ad; background-color:#ffffff;&quot;&gt;风弹物品风弹&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;所产生的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E7%88%86%E7%82%B8#%E9%A3%8E%E7%88%86&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#0645ad; background-color:#ffffff;&quot;&gt;风爆&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;击退或使用重锤时此值被设置为40&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%B8%B8%E6%88%8F%E5%88%BB&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#0645ad; background-color:#ffffff;&quot;&gt;游戏刻&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;（2秒），被其他爆炸波及、或&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;击退坐标&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;被清除时设置为0。此值达到0时清除&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;击退坐标&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;和&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;玩家受到爆炸冲击并减少伤害&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_67">
+           <property name="text">
+            <string>游戏模式</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QLineEdit" name="lineEdit_78">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%99%84%E9%AD%94%E5%8F%B0&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;附魔台&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;选取附魔使用的随机数种子。当此值不存在时游戏会随机产生一个新的种子。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QCheckBox" name="checkBox_18">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否可以立刻摧毁&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%96%B9%E5%9D%97&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#0645ad; background-color:#ffffff;&quot;&gt;方块&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;、选取方块时是否允许保存&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%96%B9%E5%9D%97%E5%AE%9E%E4%BD%93&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#0645ad; background-color:#ffffff;&quot;&gt;方块实体&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;数据、使用铁砧是否不消耗经验值且不会过于昂贵、是否立刻破坏载具等。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>可以立刻摧毁方块</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="1">
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_80">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;距玩家上次警&lt;/p&gt;&lt;p&gt;告后的时间&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_81">
+             <property name="text">
+              <string>警告等级</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_79">
+             <property name="text">
+              <string>警告时间</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_75"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_76"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_77"/>
+           </item>
+          </layout>
+         </item>
+         <item row="17" column="1">
+          <widget class="QCheckBox" name="checkBox_19">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否受到爆炸冲击且可以因为冲击减少摔落伤害，当玩家被风弹物品风弹所产生的风爆击退或使用重锤时此值被设置为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，在重置时间后、被其他爆炸波及、或&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;击退坐标&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;被清除时此值被设置为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。此值为&lt;/span&gt;&lt;span style=&quot; font-family:'SFMono-Regular','Consolas','Liberation Mono','Menlo','monospace','Courier'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;代表摔落伤害会根据&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;击退坐标&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;减少或免除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>玩家受到爆炸冲击并减少伤害</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QCheckBox" name="checkBox_15">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否能抵抗绝大多数伤害。如果为&lt;/span&gt;&lt;span style=&quot; font-family:'SFMono-Regular','Consolas','Liberation Mono','Menlo','monospace','Courier'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，玩家不消耗饥饿值、通过&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E4%B8%8B%E7%95%8C%E4%BC%A0%E9%80%81%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;下界传送门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;的时间被改变、身上的火可以快速熄灭，且只会受到带有&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;#bypasses_invulnerability&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;标签的伤害。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>坚不可摧</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_61">
+           <property name="text">
+            <string>饱和度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_48">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的飞行速度。如果此项不存在则游戏认为此项是0.05。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="lineEdit_58">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的饥饿值。如果此项不存在游戏默认为20。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>监守者生成机制</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="0">
+          <widget class="QLabel" name="label_84">
+           <property name="text">
+            <string>重生点设置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QComboBox" name="comboBox_3">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;如果此项不存在则游戏会使用存档中的游戏模式。如果存档强制指定游戏模式则此项无效。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>生存模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>创造模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>冒险模式</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>旁观模式</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="lineEdit_60">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的食物计刻器。如果&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; text-decoration: underline; color:#ff0000; background-color:#ffffff;&quot;&gt;饥饿值&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;不存在游戏默认为0。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QLineEdit" name="lineEdit_79"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_60">
+           <property name="text">
+            <string>饥饿值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>分数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QLineEdit" name="lineEdit_69">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;自玩家开始睡觉之后经过的时间。控制渲染效果和猫给予礼物。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>经验：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_68">
+           <property name="text">
+            <string>上一个游戏模式</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="label_82">
+           <property name="text">
+            <string>附魔台种子</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QCheckBox" name="checkBox_17">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家是否能飞行，阻止玩家因为飞行而被服务器踢出。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>允许飞行</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="1">
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_75">
+             <property name="text">
+              <string>角度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_70">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;（命名空间ID）玩家重生点所处的维度。仅在玩家设置重生点后存在，在重生时检查重生点无效时被清除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>   Z   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_77">
+             <property name="text">
+              <string>   Y   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>维度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_76">
+             <property name="text">
+              <string>   X   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_71">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家重生时的角度。仅在玩家设置重生点后存在，在重生时检查重生点无效时被清除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_72">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的重生点的X坐标。仅在玩家设置重生点后存在，在重生时检查重生点无效时被清除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_73">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的重生点的Y坐标。仅在玩家设置重生点后存在，在重生时检查重生点无效时被清除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_74">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;玩家的重生点的Z坐标。仅在玩家设置重生点后存在，在重生时检查重生点无效时被清除。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="24" column="0">
+          <widget class="QLabel" name="label_87">
+           <property name="text">
+            <string>上次死亡地点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="1">
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_65">
+             <property name="text">
+              <string>   Y   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_66">
+             <property name="text">
+              <string>   Z   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_64">
+             <property name="text">
+              <string>   X   </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_63">
+             <property name="text">
+              <string>维度</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_61"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_62"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_63"/>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_64"/>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_52">
+           <property name="text">
+            <string>飞行速度</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>选项</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档是否启用命令。如果此项不存在，则游戏判断GameType是否为1（创造模式）。如果是则为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，否则为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>启用命令</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;此存档难度是否被锁定。当此项不存在时游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>难度锁定</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档内玩家死亡后是否自动转变为旁观模式。当此项不存在时游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>极限模式</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;存档是否被正确初始化。如果此项为&lt;/span&gt;&lt;span style=&quot; font-family:'SFMono-Regular','Consolas','Liberation Mono','Menlo','monospace','Courier'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;，游戏在加载存档之后会重新寻找世界出生点并重新放置&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E5%A5%96%E5%8A%B1%E7%AE%B1&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;奖励箱&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。当此项不存在时游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>正确初始化</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="checkBox_7">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前存档内世界是否正处于&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E9%9B%B7%E6%9A%B4&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;雷暴&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;天气。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>雷暴天气</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前存档内世界是否正在降雨。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>正在降雨</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="checkBox_9">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;世界是否生成结构。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>生成结构</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QCheckBox" name="checkBox_8">
+         <property name="text">
+          <string>奖励箱</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>末影龙</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>322</width>
+         <height>279</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>321</width>
+          <height>303</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_25">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前末影龙的UUID。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_43">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前末影龙的UUID。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_42">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前末影龙的UUID。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_44">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;当前末影龙的UUID。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="1">
+          <widget class="QCheckBox" name="checkBox_11">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙是否正在重生。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>末影龙正在重生</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="checkBox_10">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙是否已经死亡。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>末影龙已经死亡</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPlainTextEdit" name="plainTextEdit_2">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;包含即将生成的&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%9C%AB%E5%9C%B0%E6%8A%98%E8%B7%83%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;末地折跃门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;的位置。刚创建世界时为20个数字，0为东方，数字按顺时针方向递增。末影龙每死亡一次此列表长度减1，直到为全部清空后此项不再保存。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>传送门坐标</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_46">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙被击败后会飞往的地方，即&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;返回传送门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;的位置。内部包含3个整数，分别代表XYZ坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_47">
+             <property name="text">
+              <string>  X  </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_45">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙被击败后会飞往的地方，即&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;返回传送门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;的位置。内部包含3个整数，分别代表XYZ坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_48">
+             <property name="text">
+              <string>  Y  </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_49">
+             <property name="text">
+              <string>  Z  </string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_47">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙被击败后会飞往的地方，即&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;返回传送门&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;的位置。内部包含3个整数，分别代表XYZ坐标。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_51">
+           <property name="text">
+            <string>末地折跃门的位置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>UIUID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="checkBox_12">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;此世界是否没有进入过&lt;/span&gt;&lt;a href=&quot;https://wiki.biligame.com/mc/%E6%9C%AB%E5%9C%B0&quot;&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#0645ad; background-color:#ffffff;&quot;&gt;末地&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>没进过末地</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QCheckBox" name="checkBox_13">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;末影龙是否被击败过，决定下次击败末影龙获得的经验值。如果此项不存在游戏默认为&lt;/span&gt;&lt;span style=&quot; font-family:'monospace','monospace'; color:#000000; background-color:#f8f9fa;&quot;&gt;false&lt;/span&gt;&lt;span style=&quot; font-family:'sans-serif'; font-size:14px; color:#202122; background-color:#ffffff;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>末影龙被击败过</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>281</width>
+      <height>309</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>文件：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>文件路径</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>文件数据：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>625</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_O"/>
+    <addaction name="action_S"/>
+    <addaction name="action_A"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/ico/image/open.ico</normaloff>:/ico/image/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/ico/image/save.ico</normaloff>:/ico/image/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>另存为(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
